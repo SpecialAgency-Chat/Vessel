@@ -1,12 +1,13 @@
 import { Hono } from "hono";
 import { verifyDiscordRequest } from "@/verifyDiscordRequest";
 import { InteractionResponseType, InteractionType } from "discord-api-types/v10";
-import configLogger from "./logger";
-import { getLogger } from "log4js";
+import { configLogger, getLogger } from "./logger";
 
 const app = new Hono();
 
-configLogger();
+// if you want to color the logs, set this to true
+configLogger(true);
+
 const logger = getLogger("Server");
 
 app.get("/", async (c) => {
