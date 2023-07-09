@@ -11,7 +11,7 @@ configLogger(true);
 const logger = getLogger("Server");
 
 app.get("/", async (c) => {
-  c.text(`Hello! Client ID: ${c.env?.DISCORD_CLIENT_ID}`);
+  return c.text(`Hello! Client ID: ${c.env?.DISCORD_CLIENT_ID}`);
 });
 
 app.post("/interactions", async (c) => {
