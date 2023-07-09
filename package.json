@@ -1,0 +1,44 @@
+{
+  "name": "vessel",
+  "version": "1.0.0",
+  "description": "Discord HTTP Interactions Template",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "dev": "wrangler dev dist/server.js",
+    "publish": "wrangler deploy",
+    "ngrok": "ngrok http 8787"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpecialAgency-Chat/Vessel.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "waki285 <suzuneu@suzuneu.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SpecialAgency-Chat/Vessel/issues"
+  },
+  "homepage": "https://github.com/SpecialAgency-Chat/Vessel#readme",
+  "dependencies": {
+    "discord-api-types": "^0.37.47",
+    "discord-interactions": "^3.4.0",
+    "dotenv": "^16.3.1",
+    "hono": "^3.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "esbuild": "^0.18.11",
+    "eslint": "^8.44.0",
+    "glob": "^10.3.2",
+    "prettier": "^3.0.0",
+    "tsconfig.json": "^1.0.11",
+    "wrangler": "^3.1.2"
+  }
+}
