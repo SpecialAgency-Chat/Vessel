@@ -10,7 +10,7 @@ export default function configLogger(): void {
     categories: {
       default: {
         appenders: ["console"],
-        level: process.env["NODE_ENV"] === "production" ? "info" : "trace",
+        level: "trace", // do stuff
         enableCallStack: true,
       },
     },
