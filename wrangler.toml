@@ -1,0 +1,4 @@
+name = "sample-project"
+main = "dist/server.js"
+compatibility_date = "2023-06-28"
+
