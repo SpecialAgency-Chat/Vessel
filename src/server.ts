@@ -26,6 +26,9 @@ app.post("/interactions", async (c) => {
     logger.debug("Handling ping");
     return c.json({ type: InteractionResponseType.Pong });
   }
+
+  // Unknown interaction type
+  return c.json({ error: "Unknown Interaction type" });
 });
 
 export default app;
