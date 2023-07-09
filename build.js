@@ -11,7 +11,10 @@ import * as glob from "glob";
     legalComments: "none",
     platform: "node",
     target: "es2022",
-    logLevel: "info"
+    logLevel: "info",
+    sourcesContent: false,
+    allowOverwrite: true,
+    format: "esm"
   });
   await ctx.rebuild();
   process.exit(0);
