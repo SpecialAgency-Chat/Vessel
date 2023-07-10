@@ -12,7 +12,8 @@
 3. `npm run build`
 4. `npm run publish`
 5. Paste `https://<YOUR_WORKERS_PROJECT_NAME>.<YOUR_CLOUDFLARE_ACCOUNT_NAME>.workers.dev/interactions` to `INTERACTIONS ENDPOINT URL` (Discord Developer Portal)
-6. Try `/ping` (maybe works)
+6. `npm run register` (Need Node.js 18+)
+7. Try `/ping` (maybe works)
 
 ```sh
 npx wrangler secret put DISCORD_PUBLIC_KEY
