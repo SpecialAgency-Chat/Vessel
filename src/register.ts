@@ -4,14 +4,14 @@ import Commands from "./commands";
 dotenv.config({ path: ".dev.vars" });
 
 const token = process.env.DISCORD_TOKEN;
-const applicationId = process.env.DISCORD_APPLICATION_ID;
+const applicationId = process.env.DISCORD_CLIENT_ID;
 
 if (!token) {
   throw new Error("The DISCORD_TOKEN environment variable is required.");
 }
 if (!applicationId) {
   throw new Error(
-    "The DISCORD_APPLICATION_ID environment variable is required.",
+    "The DISCORD_CLIENT_ID environment variable is required.",
   );
 }
 
