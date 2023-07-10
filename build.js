@@ -1,6 +1,5 @@
 import { context } from "esbuild";
 import * as glob from "glob";
-import { nodeExternalsPlugin } from "esbuild-node-externals";
 
 (async () => {
   const ctx = await context({
@@ -12,11 +11,7 @@ import { nodeExternalsPlugin } from "esbuild-node-externals";
     legalComments: "none",
     platform: "node",
     target: "es2022",
-    logLevel: "info",
-    sourcesContent: false,
-    allowOverwrite: true,
-    format: "cjs",
-    plugins: [nodeExternalsPlugin()],
+    logLevel: "info"
   });
   await ctx.rebuild();
   process.exit(0);

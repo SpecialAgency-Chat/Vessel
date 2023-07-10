@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
-import Commands from "./commands";
+// idk how to remove .js extension
+import Commands from "./commands.js";
 
 dotenv.config({ path: ".dev.vars" });
 
