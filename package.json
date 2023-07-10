@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Discord HTTP Interactions Template",
   "main": "dist/server.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js",
+    "build": "node build.mjs",
     "dev": "wrangler dev dist/server.js",
     "publish": "wrangler deploy",
-    "ngrok": "ngrok http 8787"
+    "ngrok": "ngrok http 8787",
+    "register": "node dist/register.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "discord-api-types": "^0.37.47",
     "discord-interactions": "^3.4.0",
     "dotenv": "^16.3.1",
+    "esbuild-node-externals": "^1.8.0",
     "hono": "^3.2.7",
     "log4js": "^6.9.1"
   },
