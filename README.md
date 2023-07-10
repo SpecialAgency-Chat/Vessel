@@ -1,7 +1,7 @@
 # Vessel
 
 <div align="center">
-  <img src="https://i.imgur.com/WuhFlQI.png">
+  <img src="https://i.imgur.com/WuhFlQI.png"><br>
   <i>Discord HTTP Interactions Template</i>
 </div>
 
