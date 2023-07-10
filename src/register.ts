@@ -17,7 +17,7 @@ if (!applicationId) {
 
 const url = `https://discord.com/api/v10/applications/${applicationId}/commands`;
 
-async () => {
+(async () => {
   const response = await fetch(url, {
     headers: {
       "Content-Type": "application/json",
@@ -46,4 +46,4 @@ async () => {
     console.error(errorText);
     process.exit(1);
   }
-};
+})();
