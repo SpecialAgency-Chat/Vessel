@@ -1,8 +1,8 @@
 # Vessel
 
-<div style="text-align: center;">
+<div align="center">
   <img src="https://i.imgur.com/WuhFlQI.png">
-  <div style="font-style: italic;">Discord HTTP Interactions Template</div>
+  *Discord HTTP Interactions Template*
 </div>
 
 ## Quickstart
