@@ -10,9 +10,7 @@ if (!token) {
   throw new Error("The DISCORD_TOKEN environment variable is required.");
 }
 if (!applicationId) {
-  throw new Error(
-    "The DISCORD_CLIENT_ID environment variable is required.",
-  );
+  throw new Error("The DISCORD_CLIENT_ID environment variable is required.");
 }
 
 const url = `https://discord.com/api/v10/applications/${applicationId}/commands`;

@@ -12,7 +12,7 @@ const LogColors: Record<LogLevel, ChalkInstance> = {
   warn: chalk.yellow,
   error: chalk.red,
   fatal: chalk.bgRed,
-}
+};
 
 class Logger {
   private name: string;
@@ -24,7 +24,9 @@ class Logger {
   }
   private getMsg(level: LogLevel, message: unknown) {
     const infos = `[${this.getDate()}] [${level.toUpperCase()}] ${this.name} -`;
-    return `${withColors ? LogColors[level](infos):infos} ${typeof message === "string" ? message:inspect(message)}`;
+    return `${withColors ? LogColors[level](infos) : infos} ${
+      typeof message === "string" ? message : inspect(message)
+    }`;
   }
   public trace(message: unknown) {
     console.trace(this.getMsg("trace", message));

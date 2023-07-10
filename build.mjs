@@ -16,7 +16,7 @@ import { nodeExternalsPlugin } from "esbuild-node-externals";
     sourcesContent: false,
     allowOverwrite: true,
     format: "cjs",
-    plugins: [nodeExternalsPlugin()]
+    plugins: [nodeExternalsPlugin()],
   });
   await ctx.rebuild();
   process.exit(0);

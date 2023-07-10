@@ -1,6 +1,10 @@
 import { Hono } from "hono";
 import { verifyDiscordRequest } from "@/verifyDiscordRequest";
-import { InteractionResponseType, InteractionType, MessageFlags } from "discord-api-types/v10";
+import {
+  InteractionResponseType,
+  InteractionType,
+  MessageFlags,
+} from "discord-api-types/v10";
 import { configLogger, getLogger } from "./logger";
 import { isChatInputApplicationCommandInteraction } from "discord-api-types/utils/v10";
 
@@ -38,8 +42,8 @@ app.post("/interactions", async (c) => {
             type: InteractionResponseType.ChannelMessageWithSource,
             data: {
               content: "Pong!",
-              flags: MessageFlags.Ephemeral
-            }
+              flags: MessageFlags.Ephemeral,
+            },
           });
         }
       }

@@ -3,7 +3,7 @@ import { APIInteraction } from "discord-api-types/v10";
 import { verifyKey } from "discord-interactions";
 
 export async function verifyDiscordRequest(
-  context: Context<Env>
+  context: Context<Env>,
 ): Promise<
   | { isValid: false; interaction: null }
   | { isValid: true; interaction: APIInteraction }
@@ -14,7 +14,12 @@ export async function verifyDiscordRequest(
   const isValidRequest =
     signature &&
     timestamp &&
-    verifyKey(body, signature, timestamp, context.env?.DISCORD_PUBLIC_KEY as string);
+    verifyKey(
+      body,
+      signature,
+      timestamp,
+      context.env?.DISCORD_PUBLIC_KEY as string,
+    );
   if (!isValidRequest) {
     return { isValid: false, interaction: null };
   }
