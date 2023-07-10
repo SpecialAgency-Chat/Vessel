@@ -9,7 +9,9 @@
     "dev": "wrangler dev dist/server.js",
     "publish": "wrangler deploy",
     "ngrok": "ngrok http 8787",
-    "register": "node dist/register.js"
+    "register": "node dist/register.js",
+    "lint": "eslint . & prettier --check .",
+    "lintfix": "eslint --fix . && prettier --fix ."
   },
   "repository": {
     "type": "git",
