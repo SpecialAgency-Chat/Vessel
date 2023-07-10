@@ -20,3 +20,10 @@ npx wrangler secret put DISCORD_PUBLIC_KEY
 npx wrangler secret put DISCORD_CLIENT_ID
 npx wrangler secret put DISCORD_TOKEN
 ```
+
+## Auto deploy
+
+This repository has supported auto deploy to Cloudflare Workers via GitHub Actions.
+
+1. Add Actions Secrets `CF_ACCOUNT_ID` and `CF_API_TOKEN` (Not sure where these are? Check out the guide below)
+2. Push, and it works (Don't deployed? Check Actions status)
