@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="https://i.imgur.com/WuhFlQI.png">
-  *Discord HTTP Interactions Template*
+  _Discord HTTP Interactions Template_
 </div>
 
 ## Quickstart
