@@ -29,12 +29,10 @@
   "homepage": "https://github.com/SpecialAgency-Chat/Vessel#readme",
   "dependencies": {
     "browser-util-inspect": "^0.2.0",
-    "chalk": "^5.3.0",
     "discord-api-types": "^0.37.47",
     "discord-interactions": "^3.4.0",
     "dotenv": "^16.3.1",
-    "hono": "^3.2.7",
-    "log4js": "^6.9.1"
+    "hono": "^3.2.7"
   },
   "devDependencies": {
     "@types/browser-util-inspect": "^0.2.0",
@@ -43,7 +41,6 @@
     "@typescript-eslint/parser": "^5.61.0",
     "esbuild": "^0.18.11",
     "eslint": "^8.44.0",
-    "glob": "^10.3.2",
     "ngrok": "^5.0.0-beta.2",
     "prettier": "^3.0.0",
     "tsconfig.json": "^1.0.11",

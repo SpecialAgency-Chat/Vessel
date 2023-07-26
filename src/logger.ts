@@ -1,18 +1,7 @@
-import chalk, { ChalkInstance } from "chalk";
 import inspect from "browser-util-inspect";
 
-let withColors = true;
 
 type LogLevel = "trace" | "debug" | "info" | "warn" | "error" | "fatal";
-
-const LogColors: Record<LogLevel, ChalkInstance> = {
-  trace: chalk.gray,
-  debug: chalk.blue,
-  info: chalk.green,
-  warn: chalk.yellow,
-  error: chalk.red,
-  fatal: chalk.bgRed,
-};
 
 class Logger {
   private name: string;
@@ -24,7 +13,7 @@ class Logger {
   }
   private getMsg(level: LogLevel, message: unknown) {
     const infos = `[${this.getDate()}] [${level.toUpperCase()}] ${this.name} -`;
-    return `${withColors ? LogColors[level](infos) : infos} ${
+    return `${infos} ${
       typeof message === "string" ? message : inspect(message)
     }`;
   }
@@ -50,8 +39,4 @@ class Logger {
 
 export function getLogger(name: string) {
   return new Logger(name);
-}
-
-export function configLogger(colors: boolean) {
-  withColors = colors;
 }

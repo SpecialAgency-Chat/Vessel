@@ -5,13 +5,10 @@ import {
   InteractionType,
   MessageFlags,
 } from "discord-api-types/v10";
-import { configLogger, getLogger } from "./logger";
+import { getLogger } from "./logger";
 import { isChatInputApplicationCommandInteraction } from "discord-api-types/utils/v10";
 
 const app = new Hono();
-
-// if you want to color the logs, set this to true
-configLogger(true);
 
 const logger = getLogger("Server");
 
