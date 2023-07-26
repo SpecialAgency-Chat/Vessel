@@ -1,6 +1,5 @@
 import inspect from "browser-util-inspect";
 
-
 type LogLevel = "trace" | "debug" | "info" | "warn" | "error" | "fatal";
 
 class Logger {
