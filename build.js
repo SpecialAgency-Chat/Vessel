@@ -1,16 +1,16 @@
 import { context } from "esbuild";
-import * as glob from "glob";
 
 (async () => {
   const ctx = await context({
-    entryPoints: glob.sync("./src/**/*.ts"),
+    entryPoints: ["src/server.ts", "src/register.ts"],
+    bundle: true,
     outdir: "dist",
     tsconfig: "tsconfig.json",
     minify: true,
     sourcemap: "inline",
     legalComments: "none",
     platform: "node",
-    target: "es2022",
+    target: "esnext",
     logLevel: "info",
   });
   await ctx.rebuild();

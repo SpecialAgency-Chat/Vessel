@@ -28,3 +28,5 @@ This repository has supported auto deploy to Cloudflare Workers via GitHub Actio
 
 1. Add Actions Secrets `CF_ACCOUNT_ID` and `CF_API_TOKEN` (Not sure where these are? Check out the guide below)
 2. Push, and it works (Don't deployed? Check Actions status)
+
+![](https://i.imgur.com/ZJFL2PJ.png) (domain page)
