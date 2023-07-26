@@ -1,7 +1,3 @@
 {
-    "editor.tabSize": 2,
-    "search.exclude": {
-        "**/node_modules": false
-    },
-    "search.useIgnoreFiles": false
+    "editor.tabSize": 2
 }
