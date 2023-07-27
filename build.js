@@ -27,7 +27,9 @@ import { context } from "esbuild";
     target: "esnext",
     format: "esm",
     logLevel: "info",
-    banner: { js: `import { createRequire } from 'module';const require = createRequire(import.meta.url);`}
+    banner: {
+      js: `import { createRequire } from 'module';const require = createRequire(import.meta.url);`,
+    },
   });
   await ctx2.rebuild();
   process.exit(0);
