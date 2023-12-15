@@ -32,7 +32,7 @@
     "discord-api-types": "^0.37.47",
     "discord-interactions": "^3.4.0",
     "dotenv": "^16.3.1",
-    "hono": "^3.2.7"
+    "hono": "^3.11.7"
   },
   "devDependencies": {
     "@types/browser-util-inspect": "^0.2.0",
